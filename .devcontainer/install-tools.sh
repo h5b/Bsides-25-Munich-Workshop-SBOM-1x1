@@ -4,10 +4,12 @@ set -e
 echo "Installing SBOM Workshop Tools..."
 
 # Install syft (SBOM generation tool)
+# Using official Anchore installation method: https://github.com/anchore/syft#installation
 echo "Installing Syft..."
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo sh -s -- -b /usr/local/bin
 
 # Install grype (vulnerability scanner)
+# Using official Anchore installation method: https://github.com/anchore/grype#installation
 echo "Installing Grype..."
 curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b /usr/local/bin
 

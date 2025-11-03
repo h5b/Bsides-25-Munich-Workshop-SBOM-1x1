@@ -99,6 +99,10 @@ cdxgen -o project-bom.json
 - **[Quick Reference](QUICK_REFERENCE.md)** - Command cheat sheet for all tools
 - **[Examples](examples/)** - Sample applications to practice with
 
+## 🔒 Security Note
+
+The devcontainer setup uses official installation scripts from Anchore (syft, grype) and npm (cdxgen). These are the recommended installation methods from each tool's official documentation. The environment is intended for educational purposes in a workshop setting.
+
 ## 🤝 Contributing
 
 This is a workshop environment. Feel free to experiment and modify as needed!
