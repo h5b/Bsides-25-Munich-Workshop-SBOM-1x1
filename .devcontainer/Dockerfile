@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
+# SBOM Workshop Development Container
+# Includes: Node.js, Docker CLI, Syft, Grype, cdxgen, CycloneDX CLI, sbomqs
+
 # Install Node.js (LTS)
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends curl ca-certificates gnupg \
